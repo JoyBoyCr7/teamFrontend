@@ -20,8 +20,10 @@ const Home = () => {
 
             
         <h1>List of da Product$</h1>
+        <div className='home-container'>
             {products.map((product, index) => (
-                <div key={product._id} className='productname'>
+        
+                <div key={product._id} className='card'>
                     <Link to={`product/${product._id}`}>
                         <h1>{product.productname}</h1>
                     </Link>
@@ -30,7 +32,8 @@ const Home = () => {
                     <h3>Description: {product.description}</h3>
                 </div>
             ))}
-            <h1>Welcome to the FarmLand$</h1>
+        </div>
+            
         {farms.map((farm, index) => (
                 <div key={farm._id} className='farmname'>
                     <Link to={`farm/${farm._id}`}>

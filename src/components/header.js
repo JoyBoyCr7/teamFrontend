@@ -11,13 +11,7 @@ const Header = (props) => {
              <Link to='farmer/signup'> 
              Farmer Signup
              </Link>
-             <label for="cars">Login</label>
-            <select id="">
-            <option>Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-            </select>
+             
             </div>
     </nav>
 }
