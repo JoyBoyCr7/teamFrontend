@@ -6,15 +6,17 @@ const Product = () => {
     const product = useLoaderData()
     const id =  product._id
 
-        return (
-            
+        return  <div className='show'>
+
             <div className='card'>
                             
                 <h1>{product.productname}</h1>
                 <img src={product.image}/>
                 <h5>{product.description}</h5>  
                 </div>
-        )
+        
+        </div>
+            
 }
 
 export default Product

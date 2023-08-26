@@ -237,6 +237,13 @@ home-container {
 
 body {
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  font-family: 'Creepster', cursive;
+  font-family: 'Mynerve', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Space Mono', monospace;
+  font-family: 'Unica One', cursive;
 }
 
 .span {
@@ -255,4 +262,8 @@ body {
 .together{
   display: flex;
   gap: 5px;
+}
+
+.show {
+  align-items: center;
 }

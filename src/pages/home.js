@@ -18,8 +18,8 @@ const Home = () => {
                             <h1>{product.productname}</h1>
                         </Link>
                         <img src={product.image} alt={product.name} />
-                        <h2> Price: <span> ${product.price}</span></h2>
-                        <h3>Description: <span> {product.description}</span> </h3>
+                        <h2> Price: <span className='span'> ${product.price}</span></h2>
+                        <h3>Description: <span className='span'> {product.description}</span> </h3>
                     </div>
                 ))}
             </div>
