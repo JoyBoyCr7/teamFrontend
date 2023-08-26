@@ -10,7 +10,7 @@ const FProduct = () => {
 
         return (
             
-            <div className='farmproduct'>
+            <div className='card'>
                 
                 <h1>{product.productname}</h1>
                 <img src={product.image}/>
@@ -18,7 +18,7 @@ const FProduct = () => {
 
                 <h1>Edit a Product</h1>
 
-            <Form action={`/update/product/${id}`} method='PUT'>
+            <Form action={`/update/product/${id}`} method='PUT' className='login-container'>
                 <input type='text' name='productname' placeholder={product.productname}/>
                 <input type='text' name='image' placeholder={product.image}/>
                 <input type='number' name='price' placeholder={product.price}/>

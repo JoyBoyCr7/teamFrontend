@@ -120,6 +120,7 @@ home-container {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 20px;
+  margin-left: 112px ;
 }
 
 .card, .farmname {
@@ -165,4 +166,56 @@ home-container {
   display: flex;
   flex-direction: column;
   margin: 60px 15px 60px 15px;
+}
+.farm-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+/* Styles for form container */
+.form-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for form headings */
+.form-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Styles for form inputs */
+.form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Styles for submit button */
+.form-submit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-submit:hover {
+  background-color: #0056b3;
 }

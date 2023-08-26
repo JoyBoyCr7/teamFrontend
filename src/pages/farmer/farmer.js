@@ -9,29 +9,33 @@ const FarmerHome = () => {
 
 
     return (
-        <div>
-                <h1>Welcome to {fFarms.farmname} {fFarms.farmername} </h1>
-            <h1>Create a Farm</h1>
+        <div className="">
+    <div className="form-column">
+        <h1>Welcome to {fFarms.farmname} {fFarms.farmername}</h1>
+        
         <Form action='/create/farm' method='POST'>
-            <input type='text' name='farmname' placeholder='Farm Name'/>
-            <input type='text' name='image' placeholder='Farm Logo'/>
-            <input type='text' name='address' placeholder='Address'/>
-            <input type='text' name='city' placeholder='City'/>
-            <input type='text' name='state' placeholder='State'/>
-            <input type='text' name='zip' placeholder='Zip'/>
-
-        <input type='submit' value='Create Farm'/>
+            <h2 className="form-heading">Create a Farm</h2>
+            <input className="form-input" type='text' name='farmname' placeholder='Farm Name'/>
+            <input className="form-input"  type='text' name='image' placeholder='Farm Logo'/>
+            <input className="form-input" type='text' name='address' placeholder='Address'/>
+            <input className="form-input" type='text' name='city' placeholder='City'/>
+            <input className="form-input" type='text' name='state' placeholder='State'/>
+            <input className="form-input" type='text' name='zip' placeholder='Zip'/>
+            <input className="form-submit" type='submit' value='Create Farm'/>
         </Form>
-<h1>Create a Product</h1>
-        <Form action='/create/product' method='POST'>
-            <input type='text' name='productname' placeholder='Product Name'/>
-            <input type='text' name='image' placeholder='Product Image'/>
-            <input type='number' name='price' placeholder='Product Price'/>
-            <input type='text' name='description' placeholder='Product Description'/>
+    </div>
 
-            
-        <input type='submit' value='Create Product'/>
+    <div className="form-column">
+        <Form className="form-container" action='/create/product' method='POST'>
+            <h2 className="form-heading">Create a Product</h2>
+            <input className="form-input" type='text' name='productname' placeholder='Product Name'/>
+            <input className="form-input" type='text' name='image' placeholder='Product Image'/>
+            <input className="form-input" type='number' name='price' placeholder='Product Price'/>
+            <input className="form-input" type='text' name='description' placeholder='Product Description'/>
+            <input className="form-submit" type='submit' value='Create Product'/>
         </Form>
+    </div>
+
 
 
         <h1>List of da Product$</h1>

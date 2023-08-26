@@ -14,7 +14,6 @@ const Product = () => {
                 <img src={product.image}/>
                 <h5>{product.description}</h5>  
                 </div>
-            
         )
 }
 
