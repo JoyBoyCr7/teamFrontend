@@ -16,8 +16,8 @@ const ULogin = () => {
             <div className="submit-button">
             <input type="submit" value="Login" />
             <div className="notauser">
-            <Link to="/farmer/login">
-                Not a user ? sign in as farmer !
+            <Link to="/user/signup">
+                Don't have an account? register now !
             </Link>
             </div>
             </div>

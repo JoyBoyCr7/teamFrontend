@@ -8,11 +8,16 @@ const Header = (props) => {
             </Link>
         </div>
             <div className='signup'>
-             <Link to='farmer/signup'> 
-             Farmer Signup
+             <Link to='user/login'> 
+             User login
              </Link>
-             
             </div>
+            <div className='signin'>
+            <Link to='farmer/login'> 
+            Farmer login
+            </Link>
+            </div>
+            
     </nav>
 }
 

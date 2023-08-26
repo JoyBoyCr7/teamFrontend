@@ -1,4 +1,4 @@
-import { useLoaderData, Form } from 'react-router-dom'
+import { useLoaderData, Form , Link} from 'react-router-dom'
 import { deleteFarmAction } from '../actions'
 import { farmLoader } from '../loaders'
 
@@ -8,7 +8,9 @@ const Farm = () => {
     console.log(farm) 
 
         return (
-            <div className='farm'>
+            
+            <div className='card'>
+                
                 <h1>{farm.farmname}</h1>
 
                 <img src={farm.image} alt={farm.farmname} />
@@ -16,13 +18,9 @@ const Farm = () => {
                 <h3>{farm.address}</h3>
                 <h3>{farm.city}</h3>
                 <h3>{farm.state}</h3>
-           
-                      
+        </div>
 
-<button>favorite</button>
-                         </div>
-                         
-                     )
-             }
 
-export default Farm
+    )}
+
+export default Farm;
